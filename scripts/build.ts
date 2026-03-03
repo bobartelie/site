@@ -3,7 +3,7 @@ import { rmSync } from 'fs'
 
 rmSync('_site', {recursive: true, force: true})
 
-for (const page of new Glob("pages/**/index.ts").scanSync(".")) {
+for (const page of new Glob("pages/**/index.page.ts").scanSync(".")) {
     const filename = page.replaceAll('\\', '/').replace('index.page.ts', 'index.html').replace(`pages/`, '')
     const content = (await (import(`../${page}`))).default.trim()
     Bun.write(`_site/${filename}`, content)
