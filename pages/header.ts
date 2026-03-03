@@ -1,0 +1,21 @@
+export default /*html*/`
+    <header>
+        <nav x-data="{
+            open: false
+        }">
+            <div>
+                LOGO
+                <button aria-controls="menu">MENU</button>
+            </div>
+            <ul id="menu" :style="">
+                <li><a href="/">Cursos</a></li>
+                <li><a href="/">Sobre Mim</a></li>
+                <li><a href="/">Galeria</a></li>
+                <li><a href="/">Comunidade</a></li>
+                <li><a href="/">Perguntas</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Criar conta</a></li>
+            </ul>
+        </nav>
+    </header>
+`

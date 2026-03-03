@@ -1,14 +1,16 @@
 {
   "name": "site",
+  "module": "index.ts",
   "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
   },
-  "dependencies": {
-    "astro": "^5.17.1"
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun --hot scripts/server.ts",
+    "build": "bun scripts/build.ts"
   }
 }
