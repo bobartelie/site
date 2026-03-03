@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bob Artelie</title>
+        <meta name="description" content="descrição do site">
+        <link rel="stylesheet" href="styles/style.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js" integrity="sha384-/TgkGk7p307TH7EXJDuUlgG3Ce1UVolAOFopFekQkkXihi5u/6OCvVKyz1W+idaz" crossorigin="anonymous"></script>
+    </head>
+    <body x-data hx-target="main" hx-select="main">
+        
+    <header>
+        <nav x-data="{
+            open: false
+        }">
+            <div>
+                LOGO
+                <button aria-controls="menu">MENU</button>
+            </div>
+            <ul id="menu" :style="">
+                <li><a href="/">Cursos</a></li>
+                <li><a href="/">Sobre Mim</a></li>
+                <li><a href="/">Galeria</a></li>
+                <li><a href="/">Comunidade</a></li>
+                <li><a href="/">Perguntas</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Criar conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            
+    
+    <section id="hero">
+        <div>
+            <img src="hero.png" width="200" alt="" srcset="">
+        </div>
+        <div>
+            <h1>
+                <div>Pense</div> 
+                <div>Respire</div>
+                <div>Se-Inspire</div>
+            </h1>
+            <a href="">crie sua conta grátis</a>
+        </div>
+    </section>
+
+    
+    <section id="courses">
+        <h2>Cursos feitos sob medida de artista para artista</h2>
+        <div class="course-items">
+            
+    <div>
+        <img src="" alt="">
+        <h3>Nome do curso</h3>
+        <a href="">Ver curso</a>
+    </div>
+
+            
+    <div>
+        <img src="" alt="">
+        <h3>Nome do curso</h3>
+        <a href="">Ver curso</a>
+    </div>
+
+            
+    <div>
+        <img src="" alt="">
+        <h3>Nome do curso</h3>
+        <a href="">Ver curso</a>
+    </div>
+
+            
+    <div>
+        <img src="" alt="">
+        <h3>Nome do curso</h3>
+        <a href="">Ver curso</a>
+    </div>
+ asdf
+            
+    <div>
+        <img src="" alt="">
+        <h3>Nome do curso</h3>
+        <a href="">Ver curso</a>
+    </div>
+
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Oi eu sou o Bob</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur. Commodo a facilisis parturient nec. Dolor ac sed auctor vehicula sodales netus sed senectus. Nascetur eget pellentesque feugiat eget in ante amet dolor tempus. Egestas phasellus aliquet ut sit placerat tellus etiam.
+            Maecenas lectus tristique nulla tempor semper justo justo felis quisque. Magna ac tristique tristique a sit pharetra proin arcu. 
+            Lectus ac gravida nibh cras orci faucibus. Quisque aliquam cras nibh sit mi ipsum. Id at vitae convallis ullamcorper sit risus. Arcu sed tincidunt mi ornare purus. Nisl nulla ultrices non neque non consectetur purus aliquet semper. Integer amet auctor nisl ultrices. 
+        </p>
+        <a href="">Siga me nas redes sociais</a>
+    </section>
+
+    
+    <section>
+        <h2>Depoimentos</h2>
+        <div>
+            
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem accusantium temporibus quas dolorem, voluptas quibusdam eligendi ex reiciendis facilis esse quaerat dignissimos obcaecati natus maiores laboriosam sint, earum magni ut.</p>
+        <img src="" alt="">
+        <b><p>Nome do aluno</p></b>
+    </div>
+
+            
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem accusantium temporibus quas dolorem, voluptas quibusdam eligendi ex reiciendis facilis esse quaerat dignissimos obcaecati natus maiores laboriosam sint, earum magni ut.</p>
+        <img src="" alt="">
+        <b><p>Nome do aluno</p></b>
+    </div>
+
+            
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem accusantium temporibus quas dolorem, voluptas quibusdam eligendi ex reiciendis facilis esse quaerat dignissimos obcaecati natus maiores laboriosam sint, earum magni ut.</p>
+        <img src="" alt="">
+        <b><p>Nome do aluno</p></b>
+    </div>
+
+            
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem accusantium temporibus quas dolorem, voluptas quibusdam eligendi ex reiciendis facilis esse quaerat dignissimos obcaecati natus maiores laboriosam sint, earum magni ut.</p>
+        <img src="" alt="">
+        <b><p>Nome do aluno</p></b>
+    </div>
+
+            
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem accusantium temporibus quas dolorem, voluptas quibusdam eligendi ex reiciendis facilis esse quaerat dignissimos obcaecati natus maiores laboriosam sint, earum magni ut.</p>
+        <img src="" alt="">
+        <b><p>Nome do aluno</p></b>
+    </div>
+
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Galeria</h2>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    
+    <section>
+        <div>
+            <h2>Perguntas frequentes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, enim quisquam perferendis quam harum doloremque dolorum earum deleniti minus quis, pariatur rem a recusandae veritatis sapiente officia quae id similique.</p>
+        </div>
+        <div>
+            
+    <div>
+        <h3>Faq title</h3>
+        <p>Faq content</p>
+    </div>
+
+            
+    <div>
+        <h3>Faq title</h3>
+        <p>Faq content</p>
+    </div>
+
+            
+    <div>
+        <h3>Faq title</h3>
+        <p>Faq content</p>
+    </div>
+
+            
+    <div>
+        <h3>Faq title</h3>
+        <p>Faq content</p>
+    </div>
+
+            
+    <div>
+        <h3>Faq title</h3>
+        <p>Faq content</p>
+    </div>
+
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Entre na comunidade</h2>
+        
+    </section>
+
+
+        </main>
+        
+    <footer>
+        <a href="">Politica de Privacidade</a>
+        <p>Este site e plataforma foi feito com inteligência humana por <a href="/">© Walter Melo - Design e Desenvolvimento</a></p>
+        <a href="">Termos e condições</a>
+    </footer>
+
+    </body>
+    </html>
