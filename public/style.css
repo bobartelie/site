@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Bangers';
-    src: url('./fonts/Bangers-Regular.ttf');
+    src: url('/fonts/Bangers-Regular.ttf');
     font-weight: bolder;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./fonts/Poppins-Regular.ttf');
+    src: url('/fonts/Poppins-Regular.ttf');
 }
 
 *,*::after,*::before {
