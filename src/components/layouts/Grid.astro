@@ -1,0 +1,21 @@
+<div {...Astro.props}>
+    <slot/>
+</div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 767px) {
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 80vh;
+            align-items: center;
+            gap: 2rem;
+        }        
+    }
+
+</style>

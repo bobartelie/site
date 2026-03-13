@@ -1,0 +1,28 @@
+---
+import Testimonial from "../cards/Testimonial.astro";
+---
+
+<section>
+    <div class="container">
+        <div>
+            <h2>Conheça os nossos alunos</h2>
+            <div class="testimonials">
+                <Testimonial/>
+                <Testimonial/>
+                <Testimonial/>
+                <Testimonial/>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<style>
+    section {
+        background-color: #E1BDFF;
+    }
+
+    .testimonials {
+        display: flex;
+        gap: 1rem;
+    }
+</style>

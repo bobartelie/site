@@ -1,18 +1,32 @@
+---
+import Course from "../cards/Course.astro";
+---
+
 <section id="cursos">
-    <div>
-        <h2>
-            <div>Cursos feitos sob medida</div>
-            <div>De artista para artista</div>
-        </h2>
-        <a href="">Ver todos os cursos</a>
-    </div>
-    <div>
-        CURSOS
+    <div class="container">
+        <div>
+            <h2>
+                <div>Cursos feitos sob medida</div>
+                <div>De artista para artista</div>
+            </h2>
+            <a href="">Ver todos os cursos</a>
+        </div>
+        <div class="courses">
+            <Course/>
+            <Course/>
+            <Course/>
+            <Course/>
+        </div>
     </div>
 </section>
 
 <style>
     section {
         background-image: url('images/background-2.jpg');
+    }
+
+    .courses {
+        display: flex;
+        gap: 1rem;
     }
 </style>

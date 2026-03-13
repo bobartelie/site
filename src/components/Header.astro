@@ -1,19 +1,14 @@
+---
+import Navlink from "./buttons/Navlink.astro";
+import Button from "./buttons/Button.astro";
+---
+
 <header>
     <nav>
-        <ul>
-            <li><a href="#cursos">Cursos</a></li>			
-            <li><a href="#sobre">Sobre Mim</a></li>			
-            <li><a href="#galeria">Galeria</a></li>			
-            <li><a href="#comunidade">Comunidade</a></li>			
-            <li><a href="#perguntas">Perguntas</a></li>			
-        </ul>
         <div>
             <img src="images/logo.svg" alt="" srcset="">
+            <Button>menu</Button>
         </div>
-        <ul>
-            <li><a href="">Login</a></li>
-            <li><a href="">Registrar</a></li>
-        </ul>
     </nav>
 </header>
 
@@ -22,33 +17,28 @@
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 999;
     }
-
-    nav {
-        display: grid;
+    
+    div {
+        width: 100%;
+        display: flex;
         align-items: center;
-        grid-template-columns: 3fr 1fr 3fr;
-        font-family: Bangers, sans-serif;
-        font-size: 1.2rem;
-        padding: 1rem;
+        justify-content: space-between;
     }
-
-    nav > *:nth-child(2){
-        margin: auto;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
     }
-
-    ul {
+    
+    nav ul {
         display: flex;
         list-style: none;
-        gap: 1rem;
-        padding: 0;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    nav > *:nth-child(3){
-        margin-left: auto;
-    }
+        gap: 2rem;
+        align-items: center;
+    }    
+    
 </style>

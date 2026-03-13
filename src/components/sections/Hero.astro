@@ -1,25 +1,74 @@
-<section id="home">
-    <img src="images/hero.png" alt="" srcset="">
-    <div>
-        <h1>
-            <div>Pense</div>
-            <div>Respire</div>
-            <div>Se-Inspire!</div>
-        </h1>
-        <a href="/">Crie sua conta grátis</a>
-    </div>
-</section>
+---
+import Section from "../layouts/Section.astro"
+import Container from "../layouts/Container.astro"
+import Grid from "../layouts/Grid.astro"
+import Button from "../buttons/Button.astro"
+---
+
+<Section style="background-color: #8BC4FF; background-image: url('images/texture-1.png');">
+    <Container>
+        <Grid>
+            <div class="image-container">
+                <img src="images/hero.png" alt="" srcset="">
+            </div>
+            <div class="hero-text-layout">
+                <h1>
+                    <div>Pense</div>
+                    <div>Respire</div>
+                    <div>Se-Inspire!</div>
+                </h1>
+                <Button variant="cta">
+                    Crie sua conta grátis
+                </Button>
+            </div>
+        </Grid>
+    </Container>
+</Section>
 
 <style>
-    section {
-        background-image: url('images/background-1.jpg');
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        min-height: 80vh;
+    h1 {
+        font-size: max(8vw, 4rem);
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    h1 > *:nth-child(2){
+        margin-right: 2.5%;
+    }
+
+    h1 > *:nth-child(3){
+        margin-right: 1.5%;
+    }
+
+    .image-container {
+        position: relative;
+        display: flex;
         align-items: center;
+        justify-content: end;
+        z-index: 0;
     }
 
     img {
-        width: 100%;
+        position: absolute;
+        left: 5vw;
+        height: 50rem;
+    }
+
+    .hero-text-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        word-break: keep-all;
+        gap: 2rem;
+        z-index: 2;
+    }
+
+    @media (max-width: 767px) {
+        .image-container {
+            position: absolute;
+        }        
     }
 </style>

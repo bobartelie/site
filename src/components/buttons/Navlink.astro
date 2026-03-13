@@ -1,0 +1,19 @@
+---
+const {href, text} = Astro.props
+---
+
+<li><a href={href} data-text={text}>{text}</a></li>
+
+<style>
+    a {
+        font-family: Bangers, sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #021E40;
+        transition: all 0.2 ease-in-out;
+    }
+
+    a:hover {
+        color: orange;
+    }
+</style>
