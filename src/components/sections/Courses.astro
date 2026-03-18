@@ -1,32 +1,43 @@
 ---
 import Course from "../cards/Course.astro";
+import Section from "../layouts/Section.astro";
+import Container from "../layouts/Container.astro";
+import Title from "../typography/Title.astro";
+import Button from "../buttons/Button.astro";
 ---
 
-<section id="cursos">
-    <div class="container">
+<Section>
+    <Container>
         <div>
-            <h2>
-                <div>Cursos feitos sob medida</div>
-                <div>De artista para artista</div>
-            </h2>
-            <a href="">Ver todos os cursos</a>
+            <Title>
+                Cursos feitos sob medida
+                <span>De artista para artista</span>
+            </Title>
+            <Button> Ver todos os cursos </Button>
         </div>
         <div class="courses">
-            <Course/>
-            <Course/>
-            <Course/>
-            <Course/>
+            <Course />
+            <Course />
+            <Course />
+            <Course />
         </div>
-    </div>
-</section>
+    </Container>
+</Section>
 
 <style>
     section {
-        background-image: url('images/background-2.jpg');
+        /*
+        background-image: url("images/background-2.jpg");
+        */
     }
 
     .courses {
         display: flex;
         gap: 1rem;
+    }
+
+    span {
+        display: block;
+        color: red;
     }
 </style>

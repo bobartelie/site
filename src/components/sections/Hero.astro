@@ -1,9 +1,113 @@
 ---
-import Section from "../layouts/Section.astro"
-import Container from "../layouts/Container.astro"
-import Grid from "../layouts/Grid.astro"
-import Button from "../buttons/Button.astro"
+import Section from "../layouts/Section.astro";
+import Container from "../layouts/Container.astro";
+import Grid from "../layouts/Grid.astro";
+import Button from "../buttons/Button.astro";
 ---
+
+<Section nextColor="#0A3A74">
+    <Container>
+        <img class="hero-image" src="images/hero.png" alt="" srcset="" />
+        <div class="hero-wrapper">
+            <h1>
+                <div>Pense</div>
+                <div>Respire</div>
+                <div>Se-Inspire!</div>
+            </h1>
+            <a href="button button-cta">Faça sua conta grátis</a>
+        </div>
+    </Container>
+</Section>
+
+<style>
+    .divider {
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+        bottom: -0.1rem;
+        left: 0;
+    }
+
+    .hero-image {
+        width: 150%;
+        position: relative;
+        left: -5rem;
+    }
+
+    section {
+        background-color: #a3d2ff;
+        position: relative;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        box-sizing: border-box;
+        min-height: 90vh;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        font-family: Bangers;
+        font-weight: lighter;
+        text-align: right;
+        text-shadow:
+            0.2rem 0.2rem black,
+            -0.1rem -0.1rem black,
+            0px -0.1rem black,
+            -0.1rem 0px black;
+    }
+
+    .hero-wrapper {
+        width: fit-content;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 2rem;
+        color: white;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+        padding-bottom: 4rem;
+    }
+
+    h1 > *:nth-child(2) {
+        margin-right: 1rem;
+    }
+
+    h1 > *:nth-child(3) {
+        margin-right: 1.5rem;
+    }
+
+    a {
+        padding: 2rem;
+        display: inline-flex;
+        font-family: Bangers;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a::before {
+        content: "";
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        transform: skew(-8deg);
+        border: 2px solid black;
+        box-shadow: 0.5rem 0.5rem 0 black;
+    }
+</style>
+
+<!-- 
 
 <Section style="background-color: #8BC4FF; background-image: url('images/texture-1.png'); background-size: cover;">
     <Container>
@@ -72,3 +176,5 @@ import Button from "../buttons/Button.astro"
         }        
     }
 </style>
+
+-->

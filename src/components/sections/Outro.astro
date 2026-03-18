@@ -1,10 +1,17 @@
-<section>
-    <div class="container">
+---
+import Container from "../layouts/Container.astro";
+import Section from "../layouts/Section.astro";
+---
+
+<Section nextColor="#fff">
+    <Container>
         <h2>
-            Na BobArtelie, voce transforma talentos em habilidade e habilidade em carreira. Aprenda no seu ritmo, com orientaçao clara em um ambiente descontraido    
+            Na BobArtelie, voce transforma talentos em habilidade e habilidade
+            em carreira. Aprenda no seu ritmo, com orientaçao clara em um
+            ambiente descontraido
         </h2>
-    </div>
-</section>
+    </Container>
+</Section>
 
 <style>
     section {
@@ -13,7 +20,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--dark-blue);
         color: white;
+        background-color: #0a3a74;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-family: Bangers;
+        font-weight: lighter;
     }
 </style>

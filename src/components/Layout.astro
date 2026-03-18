@@ -1,33 +1,120 @@
 ---
-import Footer from "./Footer.astro"
-import Header from "./Header.astro"
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bob Artelie</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+		></script>
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 4vw;
+		font-family: Poppins;
+	}
+
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	@media (min-width: 480px) {
+		html {
+			font-size: 2vw;
+		}
+	}
+	@media (min-width: 1200px) {
+		html {
+			font-size: 1vw;
+		}
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-family: Bangers, sans-serif;
+	}
+
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2rem;
+		height: 2rem;
+		padding: 0;
+		background-color: white;
+	}
+</style>
+
+<!-- 
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bob Artelier</title>
-    <!-- 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css">	
-    -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-</head>
-<body>
-	<Header/>
-	<main>
-		<slot/>
-	</main>
-    <Footer/>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bob Artelier</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
 </html>
 
 <style is:global>
+	html {
+		font-size: 1.6vw;
+	}
+
+	/*
+	
+	
     :root {
         --dark-blue: #021E40;
     }
@@ -65,4 +152,7 @@ import Header from "./Header.astro"
         max-width: 80vw;
         margin: auto;
     }
+	
+	*/
 </style>
+-->
